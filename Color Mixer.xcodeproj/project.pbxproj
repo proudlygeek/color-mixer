@@ -61,8 +61,7 @@
 				920ADCBF1B667A8C00D7188A /* LaunchScreen.storyboard */,
 				920ADCC21B667A8C00D7188A /* Info.plist */,
 			);
-			name = "Color Mixer";
-			path = MyColorMaker;
+			path = "Color Mixer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +248,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = MyColorMaker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Color Mixer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gianlucabargelli.Color-Maker";
@@ -262,7 +261,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = MyColorMaker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Color Mixer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gianlucabargelli.Color-Maker";
@@ -289,6 +288,7 @@
 				920ADCC71B667A8C00D7188A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

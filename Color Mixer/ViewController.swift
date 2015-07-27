@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         self.mode = ColorPickerMode.HEX
         updateColors(getCurrentColor())
-        updateLabels()
+        updateLabels(animate: nil)
     }
     
     func convert(value: Float) -> Int {
@@ -81,10 +81,22 @@ class ViewController: UIViewController {
             [NSForegroundColorAttributeName: inverseColor]
         self.rgbLabel.textColor = inverseColor
         
-        updateLabels()
+        updateLabels(animate: nil)
     }
     
-    func updateLabels() {
+    func updateLabels(animate animate: Bool?) {
+        let duration = 0.7
+        
+        if let _ = animate {
+            UIView.animateWithDuration(duration, animations: {
+                self.rgbLabel.alpha = 0
+                UIView.animateWithDuration(duration, animations: {
+                    self.rgbLabel.alpha = 1
+                })
+                
+            })
+        }
+        
         switch (self.mode!) {
         case .HEX:
             self.switchMode.setTitle("Switch to RGB", forState: .Normal)
@@ -114,7 +126,7 @@ class ViewController: UIViewController {
         case Slider.Blue.rawValue:
             newBackgroundColor = UIColor(red: red, green: green, blue: newColor, alpha: alpha)
         default:
-            print("Boh")
+            print("I don't know what you're trying to process, son.")
             
         }
         
@@ -129,7 +141,7 @@ class ViewController: UIViewController {
             self.mode = ColorPickerMode.HEX
         }
         
-        updateLabels()
+        updateLabels(animate: true)
     }
 }
 
