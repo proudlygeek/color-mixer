@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		920ADCB71B667A8C00D7188A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920ADCB61B667A8C00D7188A /* AppDelegate.swift */; };
+		920ADCB91B667A8C00D7188A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920ADCB81B667A8C00D7188A /* ViewController.swift */; };
+		920ADCBC1B667A8C00D7188A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920ADCBA1B667A8C00D7188A /* Main.storyboard */; };
+		920ADCBE1B667A8C00D7188A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920ADCBD1B667A8C00D7188A /* Assets.xcassets */; };
+		920ADCC11B667A8C00D7188A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920ADCBF1B667A8C00D7188A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		920ADCB31B667A8C00D7188A /* MyColorMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyColorMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		920ADCB61B667A8C00D7188A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		920ADCB81B667A8C00D7188A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		920ADCBB1B667A8C00D7188A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		920ADCBD1B667A8C00D7188A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		920ADCC01B667A8C00D7188A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		920ADCC21B667A8C00D7188A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		920ADCB01B667A8C00D7188A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		920ADCAA1B667A8C00D7188A = {
+			isa = PBXGroup;
+			children = (
+				920ADCB51B667A8C00D7188A /* MyColorMaker */,
+				920ADCB41B667A8C00D7188A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		920ADCB41B667A8C00D7188A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				920ADCB31B667A8C00D7188A /* MyColorMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		920ADCB51B667A8C00D7188A /* MyColorMaker */ = {
+			isa = PBXGroup;
+			children = (
+				920ADCB61B667A8C00D7188A /* AppDelegate.swift */,
+				920ADCB81B667A8C00D7188A /* ViewController.swift */,
+				920ADCBA1B667A8C00D7188A /* Main.storyboard */,
+				920ADCBD1B667A8C00D7188A /* Assets.xcassets */,
+				920ADCBF1B667A8C00D7188A /* LaunchScreen.storyboard */,
+				920ADCC21B667A8C00D7188A /* Info.plist */,
+			);
+			path = MyColorMaker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		920ADCB21B667A8C00D7188A /* MyColorMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 920ADCC51B667A8C00D7188A /* Build configuration list for PBXNativeTarget "MyColorMaker" */;
+			buildPhases = (
+				920ADCAF1B667A8C00D7188A /* Sources */,
+				920ADCB01B667A8C00D7188A /* Frameworks */,
+				920ADCB11B667A8C00D7188A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyColorMaker;
+			productName = MyColorMaker;
+			productReference = 920ADCB31B667A8C00D7188A /* MyColorMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		920ADCAB1B667A8C00D7188A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Gianluca Bargelli";
+				TargetAttributes = {
+					920ADCB21B667A8C00D7188A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 920ADCAE1B667A8C00D7188A /* Build configuration list for PBXProject "MyColorMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 920ADCAA1B667A8C00D7188A;
+			productRefGroup = 920ADCB41B667A8C00D7188A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				920ADCB21B667A8C00D7188A /* MyColorMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		920ADCB11B667A8C00D7188A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920ADCC11B667A8C00D7188A /* LaunchScreen.storyboard in Resources */,
+				920ADCBE1B667A8C00D7188A /* Assets.xcassets in Resources */,
+				920ADCBC1B667A8C00D7188A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		920ADCAF1B667A8C00D7188A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920ADCB91B667A8C00D7188A /* ViewController.swift in Sources */,
+				920ADCB71B667A8C00D7188A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		920ADCBA1B667A8C00D7188A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				920ADCBB1B667A8C00D7188A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		920ADCBF1B667A8C00D7188A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				920ADCC01B667A8C00D7188A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		920ADCC31B667A8C00D7188A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		920ADCC41B667A8C00D7188A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		920ADCC61B667A8C00D7188A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyColorMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gianlucabargelli.MyColorMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		920ADCC71B667A8C00D7188A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyColorMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gianlucabargelli.MyColorMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		920ADCAE1B667A8C00D7188A /* Build configuration list for PBXProject "MyColorMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				920ADCC31B667A8C00D7188A /* Debug */,
+				920ADCC41B667A8C00D7188A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		920ADCC51B667A8C00D7188A /* Build configuration list for PBXNativeTarget "MyColorMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				920ADCC61B667A8C00D7188A /* Debug */,
+				920ADCC71B667A8C00D7188A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 920ADCAB1B667A8C00D7188A /* Project object */;
+}
