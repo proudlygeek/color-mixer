@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MyColorMaker
+//  Color Mixer
 //
 //  Created by Gianluca on 27/07/15.
 //  Copyright © 2015 Gianluca Bargelli. All rights reserved.

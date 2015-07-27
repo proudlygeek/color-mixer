@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		920ADCB31B667A8C00D7188A /* MyColorMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyColorMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		920ADCB31B667A8C00D7188A /* Color Mixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Mixer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		920ADCB61B667A8C00D7188A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		920ADCB81B667A8C00D7188A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		920ADCBB1B667A8C00D7188A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		920ADCAA1B667A8C00D7188A = {
 			isa = PBXGroup;
 			children = (
-				920ADCB51B667A8C00D7188A /* MyColorMaker */,
+				920ADCB51B667A8C00D7188A /* Color Mixer */,
 				920ADCB41B667A8C00D7188A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		920ADCB41B667A8C00D7188A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				920ADCB31B667A8C00D7188A /* MyColorMaker.app */,
+				920ADCB31B667A8C00D7188A /* Color Mixer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		920ADCB51B667A8C00D7188A /* MyColorMaker */ = {
+		920ADCB51B667A8C00D7188A /* Color Mixer */ = {
 			isa = PBXGroup;
 			children = (
 				920ADCB61B667A8C00D7188A /* AppDelegate.swift */,
@@ -61,15 +61,16 @@
 				920ADCBF1B667A8C00D7188A /* LaunchScreen.storyboard */,
 				920ADCC21B667A8C00D7188A /* Info.plist */,
 			);
+			name = "Color Mixer";
 			path = MyColorMaker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		920ADCB21B667A8C00D7188A /* MyColorMaker */ = {
+		920ADCB21B667A8C00D7188A /* Color Mixer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 920ADCC51B667A8C00D7188A /* Build configuration list for PBXNativeTarget "MyColorMaker" */;
+			buildConfigurationList = 920ADCC51B667A8C00D7188A /* Build configuration list for PBXNativeTarget "Color Mixer" */;
 			buildPhases = (
 				920ADCAF1B667A8C00D7188A /* Sources */,
 				920ADCB01B667A8C00D7188A /* Frameworks */,
@@ -79,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = MyColorMaker;
+			name = "Color Mixer";
 			productName = MyColorMaker;
-			productReference = 920ADCB31B667A8C00D7188A /* MyColorMaker.app */;
+			productReference = 920ADCB31B667A8C00D7188A /* Color Mixer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 920ADCAE1B667A8C00D7188A /* Build configuration list for PBXProject "MyColorMaker" */;
+			buildConfigurationList = 920ADCAE1B667A8C00D7188A /* Build configuration list for PBXProject "Color Mixer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				920ADCB21B667A8C00D7188A /* MyColorMaker */,
+				920ADCB21B667A8C00D7188A /* Color Mixer */,
 			);
 		};
 /* End PBXProject section */
@@ -249,10 +250,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyColorMaker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gianlucabargelli.MyColorMaker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gianlucabargelli.Color-Maker";
+				PRODUCT_NAME = "Color Mixer";
 			};
 			name = Debug;
 		};
@@ -262,17 +263,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyColorMaker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gianlucabargelli.MyColorMaker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gianlucabargelli.Color-Maker";
+				PRODUCT_NAME = "Color Mixer";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		920ADCAE1B667A8C00D7188A /* Build configuration list for PBXProject "MyColorMaker" */ = {
+		920ADCAE1B667A8C00D7188A /* Build configuration list for PBXProject "Color Mixer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920ADCC31B667A8C00D7188A /* Debug */,
@@ -281,7 +282,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		920ADCC51B667A8C00D7188A /* Build configuration list for PBXNativeTarget "MyColorMaker" */ = {
+		920ADCC51B667A8C00D7188A /* Build configuration list for PBXNativeTarget "Color Mixer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920ADCC61B667A8C00D7188A /* Debug */,

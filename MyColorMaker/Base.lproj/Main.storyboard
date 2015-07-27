@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YwH-E8-e3F">
-                                <rect key="frame" x="180" y="154" width="240" height="291"/>
+                                <rect key="frame" x="180" y="154" width="240" height="345"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ADp-CE-31d">
                                         <rect key="frame" x="103" y="0.0" width="118" height="31"/>
@@ -29,7 +29,7 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiR-3z-0jY">
-                                        <rect key="frame" x="22" y="3.5" width="30" height="21"/>
+                                        <rect key="frame" x="22" y="3.5" width="75" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -42,7 +42,7 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZd-Ut-fH4">
-                                        <rect key="frame" x="22" y="54" width="47" height="21"/>
+                                        <rect key="frame" x="22" y="54" width="75" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -55,16 +55,16 @@
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmc-Sj-ih0">
-                                        <rect key="frame" x="22" y="102" width="34" height="21"/>
+                                        <rect key="frame" x="22" y="102" width="75" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-4f-fi6">
                                         <rect key="frame" x="0.0" y="163" width="240" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="RGB(x,x,x)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVA-0R-DJ6">
-                                                <rect key="frame" x="65" y="36" width="117" height="55"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="rgb(x,x,x)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVA-0R-DJ6">
+                                                <rect key="frame" x="74" y="52" width="93" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -75,7 +75,17 @@
                                             <constraint firstItem="tVA-0R-DJ6" firstAttribute="centerY" secondItem="PN2-4f-fi6" secondAttribute="centerY" id="dvl-EP-0fr"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bne-em-XKg">
+                                        <rect key="frame" x="73" y="315" width="98" height="30"/>
+                                        <state key="normal" title="Switch to XXX"/>
+                                        <connections>
+                                            <action selector="changeColorPickerMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AA-Wc-GOh"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Bne-em-XKg" firstAttribute="centerX" secondItem="YwH-E8-e3F" secondAttribute="centerX" id="leA-fB-YHu"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -91,6 +101,7 @@
                         <outlet property="greenSlider" destination="obs-l4-i8U" id="aD5-4x-vjR"/>
                         <outlet property="redSlider" destination="ADp-CE-31d" id="H5Q-p4-dKn"/>
                         <outlet property="rgbLabel" destination="tVA-0R-DJ6" id="Ncg-XM-5Wp"/>
+                        <outlet property="switchMode" destination="Bne-em-XKg" id="o5u-dn-Yt7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

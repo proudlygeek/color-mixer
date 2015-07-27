@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "920ADCB21B667A8C00D7188A"
-               BuildableName = "MyColorMaker.app"
-               BlueprintName = "MyColorMaker"
-               ReferencedContainer = "container:MyColorMaker.xcodeproj">
+               BuildableName = "Color Picker.app"
+               BlueprintName = "Color Mixer"
+               ReferencedContainer = "container:Color Mixer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "920ADCB21B667A8C00D7188A"
-            BuildableName = "MyColorMaker.app"
-            BlueprintName = "MyColorMaker"
-            ReferencedContainer = "container:MyColorMaker.xcodeproj">
+            BuildableName = "Color Picker.app"
+            BlueprintName = "Color Mixer"
+            ReferencedContainer = "container:Color Mixer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "920ADCB21B667A8C00D7188A"
-            BuildableName = "MyColorMaker.app"
-            BlueprintName = "MyColorMaker"
-            ReferencedContainer = "container:MyColorMaker.xcodeproj">
+            BuildableName = "Color Picker.app"
+            BlueprintName = "Color Mixer"
+            ReferencedContainer = "container:Color Mixer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "920ADCB21B667A8C00D7188A"
-            BuildableName = "MyColorMaker.app"
-            BlueprintName = "MyColorMaker"
-            ReferencedContainer = "container:MyColorMaker.xcodeproj">
+            BuildableName = "Color Picker.app"
+            BlueprintName = "Color Mixer"
+            ReferencedContainer = "container:Color Mixer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

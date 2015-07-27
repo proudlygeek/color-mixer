@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MyColorMaker.xcodeproj">
+      location = "self:/Users/Bargelli/Code/iOS/MyColorMaker/Color Mixer.xcodeproj">
    </FileRef>
 </Workspace>

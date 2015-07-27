@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MyColorMaker
+//  Color Mixer
 //
 //  Created by Gianluca on 27/07/15.
 //  Copyright © 2015 Gianluca Bargelli. All rights reserved.
@@ -12,6 +12,10 @@ enum Slider: Int {
     case Red, Green, Blue
 }
 
+enum ColorPickerMode {
+    case HEX, RGB
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var redSlider: UISlider!
@@ -19,6 +23,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueSlider: UISlider!
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var rgbLabel: UILabel!
+    @IBOutlet weak var switchMode: UIButton!
+    
+    var mode: ColorPickerMode!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +33,21 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        self.mode = ColorPickerMode.HEX
         updateColors(getCurrentColor())
+        updateLabels()
     }
     
     func convert(value: Float) -> Int {
         return Int(ceil(value * 255))
     }
     
-    func getCurrentSliderValueFormat() -> String {
-        return "RGB(\(convert(redSlider.value)), \(convert(greenSlider.value)), \(convert(blueSlider.value)))"
+    func getCurrentSliderValueRGB() -> String {
+        return "rgb(\(convert(redSlider.value)), \(convert(greenSlider.value)), \(convert(blueSlider.value)))"
+    }
+    
+    func getCurrentSliderValueHex() -> String {
+        return "#\(String(convert(redSlider.value), radix: 16))\(String(convert(greenSlider.value), radix: 16))\(String(convert(blueSlider.value), radix: 16))".uppercaseString
     }
     
     func getCurrentColor() -> UIColor {
@@ -52,7 +65,7 @@ class ViewController: UIViewController {
                 (0.7152 * Double(convert(Float(green)))) +
                 (0.0722 * Double(convert(Float(blue))))
         
-        if y > 128 {
+        if y > 128.0 {
             return UIColor.blackColor()
         } else {
             return UIColor.whiteColor()
@@ -64,9 +77,22 @@ class ViewController: UIViewController {
         
         colorView.backgroundColor = newColor
         self.navigationController?.navigationBar.barTintColor = newColor
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: inverseColor]
-        self.rgbLabel.text = getCurrentSliderValueFormat()
+        self.navigationController?.navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: inverseColor]
         self.rgbLabel.textColor = inverseColor
+        
+        updateLabels()
+    }
+    
+    func updateLabels() {
+        switch (self.mode!) {
+        case .HEX:
+            self.switchMode.setTitle("Switch to RGB", forState: .Normal)
+            self.rgbLabel.text = getCurrentSliderValueHex()
+        case .RGB:
+            self.switchMode.setTitle("Switch to HEX", forState: .Normal)
+            self.rgbLabel.text = getCurrentSliderValueRGB()
+        }
     }
     
     @IBAction func changeColor(sender: UISlider) {
@@ -95,5 +121,15 @@ class ViewController: UIViewController {
         updateColors(newBackgroundColor)
     }
 
+    @IBAction func changeColorPickerMode(sender: UIButton) {
+        switch(self.mode!) {
+        case.HEX:
+            self.mode = ColorPickerMode.RGB
+        case.RGB:
+            self.mode = ColorPickerMode.HEX
+        }
+        
+        updateLabels()
+    }
 }
 
