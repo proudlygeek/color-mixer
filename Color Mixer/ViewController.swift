@@ -47,7 +47,11 @@ class ViewController: UIViewController {
     }
     
     func getCurrentSliderValueHex() -> String {
-        return "#\(String(convert(redSlider.value), radix: 16))\(String(convert(greenSlider.value), radix: 16))\(String(convert(blueSlider.value), radix: 16))".uppercaseString
+        let red = String(format: "%02X", convert(redSlider.value))
+        let green = String(format: "%02X", convert(greenSlider.value))
+        let blue = String(format: "%02X", convert(blueSlider.value))
+        
+        return "#\(red)\(green)\(blue)".uppercaseString
     }
     
     func getCurrentColor() -> UIColor {

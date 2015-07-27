@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "920ADCB21B667A8C00D7188A"
-               BuildableName = "Color Picker.app"
+               BuildableName = "Color Mixer.app"
                BlueprintName = "Color Mixer"
                ReferencedContainer = "container:Color Mixer.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "920ADCB21B667A8C00D7188A"
-            BuildableName = "Color Picker.app"
+            BuildableName = "Color Mixer.app"
             BlueprintName = "Color Mixer"
             ReferencedContainer = "container:Color Mixer.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "920ADCB21B667A8C00D7188A"
-            BuildableName = "Color Picker.app"
+            BuildableName = "Color Mixer.app"
             BlueprintName = "Color Mixer"
             ReferencedContainer = "container:Color Mixer.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "920ADCB21B667A8C00D7188A"
-            BuildableName = "Color Picker.app"
+            BuildableName = "Color Mixer.app"
             BlueprintName = "Color Mixer"
             ReferencedContainer = "container:Color Mixer.xcodeproj">
          </BuildableReference>
