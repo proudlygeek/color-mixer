@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.translucent = false
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -30,17 +31,24 @@ class ViewController: UIViewController {
         let red = CGFloat(redSlider.value)
         let green = CGFloat(greenSlider.value)
         let blue = CGFloat(blueSlider.value)
+        var newBackgroundColor = UIColor()
         
         switch(sender.tag) {
+            
         case Slider.Red.rawValue:
-            colorView.backgroundColor = UIColor(red: newColor, green: green, blue: blue, alpha: alpha)
+            newBackgroundColor = UIColor(red: newColor, green: green, blue: blue, alpha: alpha)
+            
         case Slider.Green.rawValue:
-            colorView.backgroundColor = UIColor(red: red, green: newColor, blue: blue, alpha: alpha)
+            newBackgroundColor = UIColor(red: red, green: newColor, blue: blue, alpha: alpha)
+
         case Slider.Blue.rawValue:
-            colorView.backgroundColor = UIColor(red: red, green: green, blue: newColor, alpha: alpha)
+            newBackgroundColor = UIColor(red: red, green: green, blue: newColor, alpha: alpha)
         default:
             print("Boh")
         }
+        
+        colorView.backgroundColor = newBackgroundColor
+        self.navigationController?.navigationBar.barTintColor   = newBackgroundColor
     }
 
 }
